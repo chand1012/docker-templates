@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>LogDNATranscriber</Name>
+  <Repository>docker.pkg.github.com/chand1012/logdna-xml-transcriber/logdna-xml-transcriber:master</Repository>
+  <Registry>https://github.com/chand1012/logdna-xml-transcriber</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI></WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/vZGjtpT.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1603212807</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="API Key" Target="SERVICE_KEY" Default="" Mode="" Description="Container Variable: SERVICE_KEY" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="RSS Link" Target="RSS_LINK" Default="" Mode="" Description="Container Variable: RSS_LINK" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Web Port" Target="5000" Default="5000" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+</Container>
