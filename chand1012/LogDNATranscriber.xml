@@ -17,10 +17,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1603212807</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>
+     Transcribes output of LogDNA to be used with Rainmeter. Icon by FreePik.
+  </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

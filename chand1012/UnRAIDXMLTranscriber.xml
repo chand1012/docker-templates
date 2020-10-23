@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>UnRAID-XML-Transcriber</Name>
+  <Name>UnRAIDXMLTranscriber</Name>
   <Repository>docker.pkg.github.com/chand1012/unraid-xml-transcriber/unraid-xml-transcriber:master</Repository>
   <Registry>https://github.com/chand1012/unraid-xml-transcriber</Registry>
   <Network>bridge</Network>
@@ -17,11 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1603398412</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>
-    Transcribes output of unRAIDAPI to be used with Rainmeter.
+    Transcribes output of unRAIDAPI to be used with Rainmeter. Icon by FreePik.
   </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -36,7 +35,7 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value>[IP]</Value>
+      <Value></Value>
       <Name>API_HOST</Name>
       <Mode/>
     </Variable>
@@ -44,4 +43,5 @@
   <Labels/>
   <Config Name="Container Port" Target="5555" Default="5555" Mode="tcp" Description="Container Port: 5555" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="API Host" Target="API_HOST" Default="" Mode="" Description="Container Variable: API_HOST" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Host IP" Target="LOCAL_IP" Default="" Mode="" Description="Container Variable: LOCAL_IP" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
