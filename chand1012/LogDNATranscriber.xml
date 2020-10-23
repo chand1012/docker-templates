@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>LogDNATranscriber</Name>
-  <Repository>docker.pkg.github.com/chand1012/logdna-xml-transcriber/logdna-xml-transcriber:master</Repository>
+  <Repository>ghcr.io/chand1012/logdna-xml-transcriber:master</Repository>
   <Registry>https://github.com/chand1012/logdna-xml-transcriber</Registry>
   <Network>bridge</Network>
   <MyIP/>

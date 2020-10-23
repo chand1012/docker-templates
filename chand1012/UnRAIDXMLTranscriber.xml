@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>UnRAIDXMLTranscriber</Name>
-  <Repository>docker.pkg.github.com/chand1012/unraid-xml-transcriber/unraid-xml-transcriber:master</Repository>
+  <Repository>ghcr.io/chand1012/unraid-xml-transcriber:master</Repository>
   <Registry>https://github.com/chand1012/unraid-xml-transcriber</Registry>
   <Network>bridge</Network>
   <MyIP/>
