@@ -17,7 +17,6 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1603909349</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Your own personal Wikipedia Archive just in case the world goes to hell.</Description>
@@ -41,5 +40,5 @@
   <Environment/>
   <Labels/>
   <Config Name="Web Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Data Path" Target="/opt/xowa/wiki" Default="/mnt/user/appdata/xowa" Mode="rw" Description="Container Path: /opt/xowa/wiki" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/xowa</Config>
+  <Config Name="Data Path" Target="/opt/xowa/wiki" Default="/mnt/user/appdata/xowa" Mode="rw" Description="Container Path: /opt/xowa/wiki" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/xowa</Config>
 </Container>

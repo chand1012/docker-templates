@@ -54,9 +54,9 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/gitea-server" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gitea-server</Config>
-  <Config Name="Timezone" Target="/etc/timezone" Default="/etc/timezone" Mode="ro" Description="Container Path: /etc/timezone" Type="Path" Display="always" Required="true" Mask="false">/etc/timezone</Config>
-  <Config Name="Localtime" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="Container Path: /etc/localtime" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/gitea-server" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/gitea-server</Config>
+  <Config Name="Timezone" Target="/etc/timezone" Default="/etc/timezone" Mode="ro" Description="Container Path: /etc/timezone" Type="Path" Display="advanced" Required="true" Mask="false">/etc/timezone</Config>
+  <Config Name="Localtime" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="Container Path: /etc/localtime" Type="Path" Display="advanced" Required="true" Mask="false">/etc/localtime</Config>
   <Config Name="Web Port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="SSH Port" Target="22" Default="222" Mode="tcp" Description="Container Port: 22" Type="Port" Display="always" Required="true" Mask="false">222</Config>
 </Container>
