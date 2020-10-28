@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>LogDNAClient</Name>
+  <Repository>logdna/logspout:latest</Repository>
+  <Registry>https://hub.docker.com/r/logdna/logspout</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview> LogDNA Client for Docker.  </Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/c3WFOuB.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>LogDNA Client for Docker. Icon by Freepik.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>LOGDNA_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>TAGS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>APPS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Ingestion Key" Target="LOGDNA_KEY" Default="" Mode="" Description="Container Variable: LOGDNA_KEY" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Tags" Target="TAGS" Default="" Mode="" Description="Container Variable: TAGS" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Docker Daemon" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Container Path: /var/run/docker.sock" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Apps" Target="APPS" Default="" Mode="" Description="Container Variable: APPS" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
