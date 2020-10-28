@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WikipediaArchive</Name>
+  <Repository>quantumobject/docker-xowa</Repository>
+  <Registry>https://hub.docker.com/r/quantumobject/docker-xowa</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Your own personal Wikipedia Archive just in case the world goes to hell.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1603909349</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Your own personal Wikipedia Archive just in case the world goes to hell.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/xowa</HostDir>
+      <ContainerDir>/opt/xowa/wiki</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Web Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Data Path" Target="/opt/xowa/wiki" Default="/mnt/user/appdata/xowa" Mode="rw" Description="Container Path: /opt/xowa/wiki" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/xowa</Config>
+</Container>
