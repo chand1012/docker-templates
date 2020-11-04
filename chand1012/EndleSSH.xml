@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>EndleSSH</Name>
+  <Repository>ghcr.io/chand1012/endlessh:master</Repository>
+  <Registry>https://github.com/chand1012/endlessh</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Endless SSH Anti-hacker software. Icon by Freepik.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/wGfQ9w6.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Endless SSH Anti-hacker software. Icon by Freepik.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2222</HostPort>
+        <ContainerPort>2222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="SSH Port" Target="2222" Default="2222" Mode="tcp" Description="Container Port: 2222" Type="Port" Display="always" Required="true" Mask="false">2222</Config>
+</Container>
